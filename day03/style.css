@@ -1,0 +1,49 @@
+/*元素选择器 */
+h1 {
+    color:white;  
+    font-size: 40px;
+    text-align: center;
+      text-shadow: 1px 1px 3px;
+    background:gray;
+    padding:5px;
+  }
+  p {
+      color: orange;
+  }
+  /* 类选择器 class */
+  .title{
+    color: red;
+  }
+  .done{
+    text-decoration: line-through;
+  }
+  /* ID 选择器 */
+  #more{
+    color: green;
+  }
+  /* 存在和值-属性选择器 */
+  [sum]{
+    background: gray;
+  }
+  [sum="abc-def"] {
+    color: yellow;
+  }
+  [sum~="ef"]{
+    color:red;
+  }
+  /* 子串值-属性选择器 */
+  [sum|="abc"]{
+    text-decoration: overline;
+  }
+  [sum^="ab"]{
+    text-decoration: line-through;
+  }
+  
+  [edu$="defg"]{
+    text-decoration: underline;
+  }
+  /*根据属性选择器的顺序会覆盖上一个同数值的效果，而不是叠加*/
+  [edu*="b"]{
+    text-decoration: overline;
+    color: gray;
+  }
