@@ -1,4 +1,7 @@
 # 验证  
+预览地址：  
+https://codepen.io/clock5/pen/pVGVWJ
+
 回顾以下自己是否已经掌握以下概念：  
 
 - 什么是CSS，CSS是如何工作的
@@ -37,11 +40,14 @@ MDN文档里的 [属性选择器](https://developer.mozilla.org/zh-CN/docs/Learn
 
 可以参考大神张鑫旭博客关于 [简单聊聊CSS选择器中的正则表达式](http://www.zhangxinxu.com/wordpress/2016/08/regular-expression-in-css-selector/) 此文的解释：
 > `[attr|=”bar”]`'attr'属性值开头必须是bar的单词，或者开头是bar-。同样的，是“单词”，不是“字符”。
-> `[attr=^”val”]`attr'属性值开头三个字符需要是val  
+> `[attr=^”val”]`'attr'属性值开头三个字符需要是val  
 
 注意 “单词” 与 ”字符” 的区别。  
-ps. 所以能看英文的还是得看英文，中文有时候翻译不太准确。
-
+ps.
+1. 所以能看英文的还是得看英文，中文有时候翻译不太准确。
+2. 正则匹配：
+[foo^="bar"], [foo$="bar"], [foo*="bar"]
+属于 CSS3 的内容。（我之前还以为一直在学CSS初代。。）
 
 ## 关于属性选择器的覆盖问题：
 根据属性选择器的顺序，同一个属性，第二个选择器会覆盖上一个的效果，而不是叠加：
