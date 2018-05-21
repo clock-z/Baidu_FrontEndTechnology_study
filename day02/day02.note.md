@@ -66,7 +66,36 @@ MDN文档说明：
   >可查看 [张正全](http://ife.baidu.com/work/detail/id/3100) 的作业，以及下面赵赫的评语。作业简单，运用HTML5的语法规则，骨架清晰。  看得出来是认真翻阅了MDN文件。
 
 2. 结合赵赫同学的评语修改后如下
-
+```
+<h2 id="education">教育背景</h2>
+     <ol>
+    <h3>本科：</h3>
+       <p><time>2016.9</time>至<time>2020.6</time></p>
+       <ul>
+         <li>汴梁大学-XX专业</li>
+         <li>卡基大学-XX专业</li>
+       </ul>
+    <h3>硕士：</h3>
+      <p><time>2020.9</time>至<time>2023.6</time></p>
+       <ul>
+         <li>社会大学-XX专业</li>
+       </ul>
+      </ol>
+    <h2 id="experience">实习经历</h2>
+    <ol>
+      <h3>搜兔公司</h3>
+      <ul>
+        <li><time>2020.5</time>至<time>2021.7</time></li>
+      <li>搜索引擎优化</li>
+      </ul>
+      <h3>zotero</h3>
+        <ul>
+      <li><time>2021.8</time>至<time>2022.9</time></li>
+      <li>界面交互体验优化</li>
+        </ul>
+      </ol>
+    </ul>
+```
 ---
 # 课程备份
 ## 课程目标（day02）
