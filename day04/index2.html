@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>day04.v2</title>
+    <style>
+        html{
+            background-color: #ccc;
+            padding: 20px;
+          }
+          body{
+            font-family: "Helvetica Neue", Helvetica, "微软雅黑", Arial, sans-serif;
+             background-color: #FFFAF0;
+             width: 800px;
+             margin: 0 auto;
+             padding: 10px;
+             box-shadow: 1px 1px 5px #666;
+          }
+          header, section, footer {
+            padding: 5px;
+          }
+          section{
+            margin-top: 20px;
+            text-align: center;
+            border-top: 2px dashed #ccc;
+          }
+          ul,ol{
+            list-style-type: none;
+            margin: none;
+            padding: 0;
+            list-style: none;
+          }
+          h1{ 
+            font-size: 40px;
+            text-align:center;
+            text-shadow: 2px 2px 1px gray;
+          }
+          /** 蓝色装饰背景条是利用border的设置做出来的**/
+          h2 {
+            width: 200px;
+            margin: 1em auto;
+            border-width: 0.8em;
+            border-style: dotted;
+            border-color: #A2D9CE;
+            line-height: 0;
+          }
+          
+          nav { 
+            text-align: center;
+          }
+          nav li{
+            display: inline-block;
+            margin: 0 auto;
+          }
+          nav a{
+            display: block;
+            width: 100px;
+          }
+          nav a:link {
+            color: green;
+            text-decoration: none;
+          
+          }
+          nav a:visited{
+            color: gray;
+          }
+          nav a:hover{
+            color: white;
+            background: orange;
+          }
+          nav a:active{
+            color: gray;
+          }
+          .face {
+            border-radius: 50%;
+          }
+          .links li{
+            display: inline-block;
+            margin: 0 auto;
+          }
+          .links li a{
+            padding: 0.5em 1em;
+            display: block;
+            width: 60px;
+            border: dotted 1px;
+          }
+          .links a:link {
+            color: black;
+            text-decoration: none;
+          }
+          .links a:hover{
+            background-color: #D4EFDF;  
+          }
+    </style>
+</head>
+<body>
+    <header>
+    <h1>
+      在线简历
+    </h1>
+    <nav>
+      <ul>
+        <li>
+          <a href="#summary" class="sum">个人简介</a>
+        </li>
+        <li>
+          <a href="#education" class="edu">教育背景</a>
+        </li>
+        <li>
+          <a href="#experience" class="exp">实习经历</a>
+        </li>
+        <li>
+          <a href="#more" class="mo">技能证书</a>
+        </li>
+      </ul>
+    </nav>
+    </header>
+    <section>
+    <h2 id="summary" class="sum">个人简介</h2>
+    
+    <div><img class="face" src="http://pic.qiantucdn.com/58pic/16/86/42/29r58PICv5K_1024.jpg!/fw/780/watermark/url/L3dhdGVybWFyay12MS4zLnBuZw==/align/center/crop/0x1009a0a0" alt="头像" width="100px">
+    </div>
+    <p>小C</p>
+    <p>交互设计狗</p>
+    <ul class="links">
+      <li><a href="mailto">邮箱</a></li>
+      <li><a href="http://www.bai.com">博客</a></li>
+      <li><a href="http://www.github.com">GitHub</a>
+    </li>
+    </ul>
+      </section>
+      <section>
+    <h2 id="education" class="edu">教育背景</h2>
+     <ol>
+    <h3>本科</h3>
+       <p><time>2016.9</time>至<time>2020.6</time></p>
+       <ul class="edu">
+         <li>汴梁大学-XX专业</li>
+         <li>卡卡大学-XX专业</li>
+       </ul>
+    <h3>硕士</h3>
+      <p><time>2020.9</time>至<time>2023.6</time></p>
+       <ul class="edu">
+         <li>社会大学-XX专业</li>
+       </ul>
+      </ol>
+      </section>
+      <section>
+    <h2 id="experience" class="exp">实习经历</h2>
+      <ol>
+      <h3>搜兔公司</h3>
+      <ul class="exp">
+        <li><time>2020.5</time>至<time>2021.7</time></li>
+      <li>搜索引擎优化</li>
+      </ul>
+      <h3>zotero</h3>
+        <ul class="exp">
+      <li><time>2021.8</time>至<time>2022.9</time></li>
+      <li>界面交互体验优化</li>
+        </ul>
+      </ol>
+    </ul>
+      </section>
+    <section>
+    <h2 id="more" class="mo">技能证书</h2>
+    <ul>
+    <h3>技能</h3>
+      <ul class="mo">
+        <li>待补充1</li>
+        <li>待补充2</li>
+      </ul>
+    <h3>证书</h3>
+      <ul class="mo">
+        <li>待补充3</li>
+        <li>待补充4</li>
+      </ul>
+    </ul>
+    </section>
+    </body>
