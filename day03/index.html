@@ -1,81 +1,60 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="uft-8">
-        <title>day03</title>
-        <link href="style.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
-        <header>
-            <h1>在线简历</h1>
-            <nav>
-              <h2 class="nav title">导航</h2>
-              <ul>
-                <li>
-                  <a href="#summary" sum="abc-def">个人简介</a>
-                </li>
-                <li>
-                  <a href="#education" edu="abc-def">教育背景</a>
-                </li>
-                <li>
-                  <a href="#experience" exp="abc edf">实习经历</a>
-                </li>
-                <li>
-                  <a href="#more">更多</a>
-                </li>
-              </ul>
-            </nav>
-            </header>
-            <section>
-            <h2 class="sum title" id="summary">个人简介</h2>
-            <ul>
-              <li sum="abc def">个人头像：
-            <img src="http://pic.qiantucdn.com/58pic/16/86/42/29r58PICv5K_1024.jpg!/fw/780/watermark/url/L3dhdGVybWFyay12MS4zLnBuZw==/align/center/crop/0x1009a0a0" width="100px"
-            height="100px">
-              </li>
-            <li sum="abcd ef"><a title:>姓名：</a><a>小C</a></li>
-            <li sum="abc-def"><a>应聘职位：</a><a>交互设计</a></li>
-            <li sum="abcd-ef">联系方式:</li>
-              <ul>
-              <li sum="abc-defg">EMAIL:<a href="mailto" >cc@gmail.com</a></li>
-              <li sum="abc-defg">TEL:13200000000</li>
-              <li sum="bc-defg">ADRESS:西北某省</li>
-              </ul>
-            </li>
-            </ul>
-            <h2 class="edu title"id="education" edu="abc def">教育背景</h2>
-             <ol>
-            <h3 edu="abc def">本科：</h3>
-               <p><time>2016.9</time>至<time>2020.6</time></p>
-               <ul>
-                 <li>汴梁大学-XX专业</li>
-                 <li>卡基大学-XX专业</li>
-               </ul>
-            <h3 edu="abc defg">硕士：</h3>
-              <p><time>2020.9</time>至<time>2023.6</time></p>
-               <ul>
-                 <li>社会大学-XX专业</li>
-               </ul>
-              </ol>
-            <h2 class="exp title"id="experience" exp="abc edf">实习经历</h2>
-            <ol>
-              <h3 exp="abc edfg">搜兔公司</h3>
-              <ul>
-                <li><time>2020.5</time>至<time>2021.7</time></li>
-              <li class="done" >搜索引擎优化</li>
-              </ul>
-              <h3 exp="abc edfg">zotero</h3>
-                <ul>
-              <li><time>2021.8</time>至<time>2022.9</time></li>
-              <li class="done">界面交互体验优化</li>
-                </ul>
-              </ol>
-            </ul>
-            <h2 class="mo title" id="more">更多</h2>
-            <ul>
-            <h3>待补充</h3>
-            <h3>待补充</h3>
-            </ul>
-            </section>
-    </body>
-</html>
+/** background **/
+h1{ 
+padding: 25px;
+/** background properties(背景属性) **/
+background-color: yellow;
+background-image: url(https://mdn.mozillademos.org/files/13026/fire-ball-icon.png) ;
+background-repeat: repeat-y;
+background-position: 99%, center;
+background-attachment:fixed;
+}
+/** border **/
+/**简写**/
+.sum{
+  border: 3px dashed gray;
+}
+/**全写**/
+.edu{
+border-style: dotted;
+border-color: red;
+border-width: 2px;
+border-bottom-width: 1px;
+border-bottom-color: blue;
+}
+/** 列表 **/
+/** 列表-全称 **/
+ul.exp{
+  list-style-type: square;
+  list-style-image: url(http://www.ffpic.com/files/2015/0913/150707255454164/ffpic1507074527056d5.gif);
+  list-style-position: inside;
+}
+/** 列表-简写 **/
+ul.edu{
+  list-style:url(http://www.ffpic.com/files/2015/0913/150707255454164/ffpic1507074527056d5.gif) inside 
+}
+/** 列表-图像插入优化: 可以自定义图片样式 **/
+ul.mo li{
+  padding-left: 25px;
+  list-style: none;
+  background-image: url(http://www.ffpic.com/files/2015/0913/150707255454164/ffpic1507074527056d5.gif) ;
+  background-position: 0 0;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+}
+
+/** 链接 **/
+a:link {
+  color: green;
+  text-decoration: none;
+  background-color: yellow ;
+}
+a:visited{
+  color: red;
+}
+a:hover{
+  color: blue;
+  background: orange;
+}
+a:active{
+  color: gray;
+}

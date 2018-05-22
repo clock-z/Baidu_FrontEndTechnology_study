@@ -1,0 +1,60 @@
+/** background **/
+h1{ 
+    padding: 25px;
+    /** background properties(背景属性) **/
+    background-color: yellow;
+    background-image: url(https://mdn.mozillademos.org/files/13026/fire-ball-icon.png) ;
+    background-repeat: repeat-y;
+    background-position: 99%, center;
+    background-attachment:fixed;
+    }
+    /** border **/
+    /**简写**/
+    .sum{
+      border: 3px dashed gray;
+    }
+    /**全写**/
+    .edu{
+    border-style: dotted;
+    border-color: red;
+    border-width: 2px;
+    border-bottom-width: 1px;
+    border-bottom-color: blue;
+    }
+    /** 列表 **/
+    /** 列表-全称 **/
+    ul.exp{
+      list-style-type: square;
+      list-style-image: url(http://www.ffpic.com/files/2015/0913/150707255454164/ffpic1507074527056d5.gif);
+      list-style-position: inside;
+    }
+    /** 列表-简写 **/
+    ul.edu{
+      list-style:url(http://www.ffpic.com/files/2015/0913/150707255454164/ffpic1507074527056d5.gif) inside 
+    }
+    /** 列表-图像插入优化: 可以自定义图片样式 **/
+    ul.mo li{
+      padding-left: 25px;
+      list-style: none;
+      background-image: url(http://www.ffpic.com/files/2015/0913/150707255454164/ffpic1507074527056d5.gif) ;
+      background-position: 0 0;
+      background-size: 20px 20px;
+      background-repeat: no-repeat;
+    }
+    
+    /** 链接 **/
+    a:link {
+      color: green;
+      text-decoration: none;
+      background-color: yellow ;
+    }
+    a:visited{
+      color: red;
+    }
+    a:hover{
+      color: blue;
+      background: orange;
+    }
+    a:active{
+      color: gray;
+    }
