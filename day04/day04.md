@@ -1,7 +1,7 @@
-## 作业
+## 作业地址
 codepen: https://codepen.io/clock5/pen/yjwMyd
 GitHub:
-
+https://github.com/clock-z/Baidu_FrontEndTechnology_study/tree/master/day04
 ## 笔记
 ### 背景background
 | 属性|说明|值|备注|
