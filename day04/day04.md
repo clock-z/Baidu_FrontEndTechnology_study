@@ -2,6 +2,7 @@
 codepen: https://codepen.io/clock5/pen/yjwMyd
 GitHub:
 https://github.com/clock-z/Baidu_FrontEndTechnology_study/tree/master/day04
+作业参考了[张正全](http://ife.baidu.com/work/detail/id/5734)。
 ## 笔记
 ### 背景background
 | 属性|说明|值|备注|
