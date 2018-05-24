@@ -1,17 +1,33 @@
-ul{
-    list-style: none;
-    padding:0
+
+body,h1,h2,h3 {
+    margin:0;
+    padding:0;
 }
-ul li{
+header {
+    padding: 20px;
     display: inline-block;
+    border: 1px dotted #000;
 }
-li{
-    margin-right:50px 
+.page{
+    padding-left:2em;
 }
-.bold{
+em{
+    font-style: normal;
     font-weight: bold;
 }
-p{
-    font-weight: bold; 
+.header{
+    padding: 2em 0 1em 0;
+}
+.part1,
+.part2,
+.part3,
+.part4,
+.part5{
+    padding-bottom:2em;
 }
 
+.part1 p,
+.part2 p{
+    display: inline-block;
+    margin-right: 2em;
+}

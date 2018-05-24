@@ -1,47 +1,59 @@
 html{
-    background:#E5E7E9  ;
+    background:#E5E7E9;
 }
 body{
     width: 800px;
     margin:0 auto;
     background: white;
-
 }
-.left{
-    margin:0 auto;
-    height: 813px;
-    width: 20%;
-    background: #AED6F1;
-    float:left;
-}
-
-main{
-    width: 78%;
-    float: left;
-    background: white;
-    padding-left: 2%;
-}
-
-h1{
-    color: white;
-    text-align: center;
-}
-    
-ul{
-    list-style: none;
-    padding: 0;
-
-}
-ul li{
+header {
+    padding: 20px;
     display: inline-block;
+    border: 1px dotted #000;
 }
-li{
-    margin-right:30px 
-}
-.bold{
+em{
+    font-style: normal;
     font-weight: bold;
 }
-p{
-    font-weight: bold; 
+h1,h1,h2,p{
+    margin:0;
+    padding:0;
+}
+/**利用padding-bottom|margin-bottom正负值相抵+overflow: hidden**/
+.header{
+    float: left;
+    padding-top: 30px;
+    width: 20%;
+    color: white;
+    text-align: center;
+    background-color: #75a5f4;
+    padding-bottom: 3000px;
+    margin-bottom: -3000px;
+}
+.page{
+    overflow: hidden;
+}
+.main{
+    float: left;
+    width: 75%;
+    padding:1em 0 0 1em;
+}
+.part1 p,
+.part2 p{
+    display: inline-block;
+    margin-right: 1.2em;
+}
+.part1 h2,
+.part2 h2{
+    margin-bottom: 0.8em;
 }
 
+.part1,
+.part2,
+.part3,
+.part4,
+.part5{
+    padding-bottom:2em;
+}
+
+    

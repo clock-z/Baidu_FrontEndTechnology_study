@@ -1,66 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
     <head>
         <meta charset="utf-8">
-        <title>个人简历</title>
-        <link href="style_3.css" rel="stylesheet">
+        <title>day5.6</title>
+<!-- 添加id="css"有助于一个html页面独立链接多个CSS样式（感谢俞綮源的作业）-->
+        <link href="style_1.css" rel="stylesheet"  id="css">
     </head>
     <body>
-    <main>
-        <div class="left">
+      <header>
+         <button onclick="num1()">一号简历</button>
+         <button onclick="num2()">二号简历</button>
+         <button onclick="num3()">三号简历</button>
+      </header>
+    <div class="page">
+        <div class="header">
             <h1>
             简历
             </h1>
         </div>
-        <div class="right">
-        <div>
-        <h2 class="msg">基本信息</h2>
-        <ul class="msg">
-            <li class="msg"><a class="bold">姓名：</a><a>张三</a></li>
-            <li class="msg"><a class="bold">性别：</a>男</li>
-            <li class="msg"><a class="bold">应聘职位：</a>web前端工程师</a></li>
-        </ul>
+        <div class="main">
+          <div class="part1">
+            <h2>基本信息</h2>
+            <div class="section-box">
+                <p><em>姓名：</em>张三</p>
+                <p><em>性别：</em>男</p>
+                <p><em>应聘职位：</em>web前端工程师</p>
+            </div>
+          </div>
+        <div class="part2">
+            <h2>联系方式</h2>
+            <div class="section-box">
+                <p><em>手机：</em>12312341234</p>
+                <p><em>Email：</em><a href="mailto:">joinefe@baidu.com</a></p>
+                <p><em>个人主页：</em><a href="http://www.github.com">GitHub</a></p>
+            </div>
         </div>
-        <div>
-        <h2>联系方式</h2>
-        <ul>
-            <li><a class="bold">手机：</a><a>12312341234</a></li>
-            <li><a class="bold">Email：</a><a href="mailto:">joinefe@baidu.com</a></li>
-            <li><a class="bold">个人主页：</a><a href="http://www.github.com">GitHub</a></li>
-        </ul>
+            <h2>能力描述</h2>
+            <div class="section-box">
+                <div class="section">
+                    <h3>技术能力</h3>
+                    <p>熟练掌握HTML,CSS,JavaScript</p>
+                </div>
+                <div class="section">
+                    <h3>综合能力</h3>
+                    <p>良好的沟通，主动积极，勤奋努力</p>
+                </div>
+            </div>
         </div>
-        <div>
-        <h2>能力描述</h2>
-        <ul>
-            <p>技术能力</p>
-            <li>熟练掌握HTML,CSS,JavaScript</li>
-            <p>综合能力</p>
-            <li>良好的沟通，主动积极，勤奋努力</li>
-        </ul>
+        <div class="part4">
+            <h2>教育经历</h2>
+            <div class="section-box">
+                <div class="section">
+                    <h3>本科</h3>
+                    <p>百度前端技术学院小薇学院</p>
+                </div>
+                <div class="section">
+                    <h3>研究生</h3>
+                    <p>百度前端技术学院大斌学院</p>
+                </div>
+            </div>
         </div>
-        <div>
-        <h2>教育经历</h2>
-        <ul>
-            <p>本科</p>
-            <li>百度前端技术学院小薇学院</li>
-            <p>研究生</p>
-            <li>百度前端技术学院大斌学院</li>
-        </ul>
+        <div class="part4">
+            <h2>项目经历</h2>
+            <div class="section-box">
+                <div class="section">
+                    <h3>小度小度</h3>
+                    <p>
+                    作为前端工程师角色参与了ABC组件的开发
+                </p>
+                </div>
+                <div class="section">
+                    <h3>SAN Don</h3>
+                    <p>
+                    作为文档工程师参与了SAN Doc编写
+                    </p>
+                </div>
+            </div>
+         </div>
         </div>
-        <div>
-        <h2>项目经历</h2>
-        <ul>
-            <p>小度小度</p>
-            <li>
-                作为前端工程师角色参与了ABC组件的开发
-            </li>
-            <p>SAN Don</p>
-            <li>
-                作为文档工程师参与了SAN Doc编写
-            </li>
-        </ul>
-        </div>
-        </div>
-    </main>
+    </div>
+    <!--页内跳转1个html多个css的页面的按钮（感谢俞綮源的作业）-->
+    <script>
+            function num1() {
+                document.getElementById("css").setAttribute("href", "style_1.css");
+                console.log("123")
+            }
+            function num2() {
+                document.getElementById("css").setAttribute("href", "style_2.css");
+            }
+            function num3() {
+                document.getElementById("css").setAttribute("href", "style_3.css");
+            }
+        </script>
     </body>
 </html>
