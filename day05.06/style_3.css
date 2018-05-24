@@ -1,0 +1,47 @@
+ul,li,h1,h2,p,a{
+    margin: 0;
+    padding:0;
+}
+main{
+    border: solid 1px gray;
+}
+ul{
+    list-style: none;
+    padding:0;
+    line-height:100px;
+}
+ul li{
+    display: inline-block;
+}
+li{
+    margin-right:30px 
+}
+.bold{
+    font-weight: bold;
+}
+p{
+    font-weight: bold; 
+}
+h1,h2{
+    font-size: 1em;
+
+}
+h1{
+    background-color: gray;
+    line-height: 50px;
+    color: white;
+    padding-left: 1em;
+}
+h2{
+    line-height: 100px;
+    width:100px;
+    text-align: center;
+    background: #EAEDED;
+}
+div{
+    border-bottom: solid 1px gray;
+}
+
+
+
+

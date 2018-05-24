@@ -1,0 +1,47 @@
+html{
+    background:#E5E7E9  ;
+}
+body{
+    width: 800px;
+    margin:0 auto;
+    background: white;
+
+}
+.left{
+    margin:0 auto;
+    height: 813px;
+    width: 20%;
+    background: #AED6F1;
+    float:left;
+}
+
+main{
+    width: 78%;
+    float: left;
+    background: white;
+    padding-left: 2%;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+    
+ul{
+    list-style: none;
+    padding: 0;
+
+}
+ul li{
+    display: inline-block;
+}
+li{
+    margin-right:30px 
+}
+.bold{
+    font-weight: bold;
+}
+p{
+    font-weight: bold; 
+}
+

@@ -1,0 +1,17 @@
+ul{
+    list-style: none;
+    padding:0
+}
+ul li{
+    display: inline-block;
+}
+li{
+    margin-right:50px 
+}
+.bold{
+    font-weight: bold;
+}
+p{
+    font-weight: bold; 
+}
+
