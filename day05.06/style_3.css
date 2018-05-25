@@ -28,6 +28,7 @@ header {
 .part4,
 .part5 {
     border: 1px solid #eaeaea;
+    background: blue;
 }
 .part1 p,
 .part2 p {
@@ -67,9 +68,9 @@ header {
 .part3:after,
 .part4:after,
 .part5:after {
-    content: " ";
+    content: "clear3 ";
     display: block;
     clear: both;
-    height: 0;
+    height: 50px;
+    background: red;
 }
-
