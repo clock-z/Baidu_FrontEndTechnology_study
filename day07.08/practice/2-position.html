@@ -8,19 +8,25 @@
                 margin: 0;
             }
            .left{
-               float: left;
-               width: 30%;
+               position: absolute;
+               top:0;
+               width: 300px;
                background: blueviolet;
+               height: 100px;
            }
            .right{
-               float:left;
-               width:70%;
+               position:absolute;
+               height: 200px;
+               width:100%;
+               left: 300px;
                background: yellowgreen;
            }
         </style>
     </head>
     <body>
+        <div class="container">
         <div class="left">left</div>
         <div class="right">right</div>
+        </div>
     </body>
 </html>

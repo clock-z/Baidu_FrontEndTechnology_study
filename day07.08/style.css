@@ -1,0 +1,155 @@
+html,body{
+    margin: 0;
+    
+}
+
+footer{
+    text-align: center;
+}
+h1{
+    float: left;
+    margin: 0;
+    width: 100px;
+    font-weight: normal;
+    font-size: 1.3em;
+    line-height: 50px;
+    color: white;
+}
+#header-right{
+    float: right;
+}
+#header-right a:link{
+    color: white;
+}
+#header-right a:hover{
+    text-decoration: none;
+    color: white;
+}
+ul,ol,li{
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background: #424949;
+
+    height: 50px;
+}
+#banner{
+    background: #66cc00;
+    height: 200px;
+}
+.container ol{
+    float: right;
+    margin-top: 155px;
+}
+.ban a:link{
+    text-align: center;
+    display: block;
+    width: 1em;
+    line-height: 1.8em;
+    color: black;
+    border:solid 0.8px black;
+    text-decoration: none;
+    background: #BBFFBB
+}
+.ban a:hover{
+    text-align: center;
+    display: block;
+    width: 1em;
+    line-height: 1.8em;
+    padding-top:3px;
+    color: gray;
+    border:solid 0.8px black;
+    text-decoration: none;
+    background: rgb(238, 255, 238)
+}
+#nav{
+    padding-top: 10px;
+}
+/**消除display: inline-block所带来的空隙，参考自张大大的空间**/
+#nav ul{
+    display: inline-table;
+    word-spacing: -6px;
+}
+#nav li a.active{
+    word-spacing: 0;
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
+    width: 100px;
+    text-decoration: none;
+    color: black;
+    border:solid gray 1px;
+    border-bottom: solid white 1px;
+    border-radius: 20px 20px 0 0;
+    background: white;
+}
+#nav li a:focus, #nav li a:hover{
+    word-spacing: 0;
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
+    width: 100px;
+    text-decoration: none;
+    color: black;
+    border:solid gray 1px;
+    border-bottom: solid white 1px;
+    border-radius: 20px 20px 0 0;
+    background: white;
+}
+#nav li a:link{
+    word-spacing: 0;
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
+    width: 100px;
+    text-decoration: none;
+    color: black;
+    border:solid gray 1px;
+    border-bottom: solid white 1px;
+    border-radius: 20px 20px 0 0;
+    background: gray;
+}
+/**不会作边线**/
+#nav{
+    border-bottom:solid gray 1px;
+}
+.line1,.line2,.line3{
+    display:flex;
+}
+.line1 li{
+    line-height: 100px;
+    text-align: center;
+    flex:1;
+    border: solid 1px gray;
+    margin:2px 2px 2px 0;
+}
+.line2 li{
+    line-height: 100px;
+    text-align: center;
+    flex:1;
+    border: solid 1px gray;
+    margin:2px 2px 2px 0;
+}
+.line3 li{
+    line-height: 100px;
+    text-align: center;
+    flex:1;
+    border: solid 1px gray;
+    margin:2px 2px 2px 0;
+}
+
+footer{
+    background: #5C5C5C;
+    color: white;
+    height: 100px;
+
+}
+.container{
+    width: 70%; 
+    margin: 0 auto;
+}
+

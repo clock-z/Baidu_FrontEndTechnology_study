@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>3-position</title>
+        <style>
+           body{
+                margin: 0;   
+            }
+            /**因为绝对向右推动，导致left文字消失了，怎么解决？在body或.left加pdding-left值也没用**/
+           .left{
+               position: absolute;
+               right: 300px;
+               width:100%;
+               background: blueviolet;
+               height: 100px;
+           }
+           .right{
+               position: absolute;
+               right:0;
+               height: 200px;
+               width: 300px;
+               background: yellowgreen;
+           }
+
+        </style>
+    </head>
+    <body>
+       <div class="container">
+          <div class="left"><a>left</a></div>  
+          <div class="right"><a>right</a></div>
+  
+
+       </div>
+    </body>
+
+</html>
