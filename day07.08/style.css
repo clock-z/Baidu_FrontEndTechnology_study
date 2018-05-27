@@ -84,29 +84,30 @@ header{
     margin-top: 14px;
     border: none;
 }
-/**设置 margin-right 的负值是为了消除 display: inline-block 的空隙**/
+/**设置 margin-right 的负值是为了消除 display: inline-block 所产生的空隙**/
 .nav_container li{
     display: inline-block;
     list-style: none;
     margin-right: -5.5px;
 }
 .nav_container a{
+    display: block;
     line-height: 45px;
     text-align: center;
     padding: 0 20px;
     background:  #eeeeee;
     border:solid #ddd 1px;
     border-radius: 15px 15px 0 0;
-    display: block;
     color: black;
     text-decoration: none;
 }
-.nav_container a:focus, 
-.nav_container a:hover{
+/**不知道怎么设置：按第二个按钮，第一个按钮自动变灰？可能需要JS交互才能设置**/
+.nav_container li a:focus, 
+.nav_container li a:hover{
     border-bottom-color:white;
     background: white;
 }
-.nav_container li .active{
+.nav_container li a.active{
     border-bottom-color:white;
     background: white;
 }
