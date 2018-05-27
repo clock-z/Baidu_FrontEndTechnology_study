@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head lang="zh-CN">
         <meta charset="utf-8">
-        <title>ife</title>
+        <title>ife-clock</title>
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
         <header>
-            <div class="container">
+            <div class="header_container">
               <h1>Logo</h1>
-              <ul id="header-right" >
+              <ul>
                   <li><a href="http://www.github.com">Github</a></li>
-                  <li><a href="http://www.baidu.com">Register</a></li>
-                  <li><a href="http://www.baidu.com">Login</a></li>
+                  <li><a href="#">Register</a></li>
+                  <li><a href="#">Login</a></li>
               </ul>
             </div>
         </header>
-        <section id="banner">
-            <div class="container ban">
+        <section class="banner">
+            <div class="banner_container">
               <ol>
                 <li><a href="#">1</a></li>
                 <li><a href="#">2</a></li>
@@ -92,29 +92,29 @@
                     </ul>
                 </article>
             </div>
-        </section>
+        </section>        
+        <section class="content">
+            <article class="content_container">
+                <div class="cell">
+                    <div>This is Conten 1</div>
+                    <div>MaybeConten 2</div>
+                    <div>Conten 3</div>
+                </div>
+                <div class="cell">
+                    <div>Conten 4</div>
+                    <div>Conten 5</div>
+                    <div>Conten 6</div>
+                    <div>Conten 7</div>
+                </div>
+                <div class="cell">
+                    <div>Conten 8</div>
+                    <div>Conten 9</div>
+                    <div>Conten 10</div>
+                </div>
+            </article>
+        </section>        
         <footer>
-            © 2018 ife.baidu.com
+            <p id="copyright">&copy; 2018 ife.baidu-clock.com</p>
         </footer>
-        <script>
-var tabs = document.querySelectorAll('.info-box li a');
-var panels = document.querySelectorAll('.info-box article');
-for(i = 0; i < tabs.length; i++) {
-  var tab = tabs[i];
-  setTabHandler(tab, i);
-}
-function setTabHandler(tab, tabPos) {
-  tab.onclick = function() {
-    for(i = 0; i < tabs.length; i++) {
-      tabs[i].className = '';
-    }
-    tab.className = 'active';
-    for(i = 0; i < panels.length; i++) {
-      panels[i].className = '';
-    }
-    panels[tabPos].className = 'active-panel';
-  }
-}
-        </script>
     </body>
 </html>
