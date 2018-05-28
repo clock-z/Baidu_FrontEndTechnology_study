@@ -192,8 +192,10 @@ input#part2_sub2{
     width: 270px;
     margin-right: 80px;
 }
-.part3_con:last-child{
-    margin-right: none;
+/**想设置 margin 为无 应该写数值 0 而不是 none **/
+.part3_con:last-of-type{
+    margin-right: 0;
+
 }
 .part3_con p{
     margin-top:40px; 
