@@ -17,10 +17,10 @@
                 <div id="header_container">
                     <h2>Create Your Account</h2>
                     <h3>It is absolutely free</h3>
-                    <input type="email" id="head_email" value="denis@getcraftwork.com">
                     <!--placeholder 属性规定用以描述输入字段预期值的提示（样本值或有关格式的简短描述）。-->
+                    <input type="email" id="head_email" placeholder="denis@getcraftwork.com">
                     <input type="password" id="head_pwd" placeholder="Create your password">
-                    <input type="submit" id="head_sub" value="Sign Up">
+                    <button>SIGN UP</button>
                 </div>
             </div>
         </header>
@@ -65,24 +65,19 @@
             </div>
         </section>
         <section id="part2">
-            <div class="container">
                 <div id="part2_container">
-                    <div id="part2_container2">
                         <h3>
                         Supportive policies for China's smart car
                         </h3>
                         <p>
                         China will come up with its own smart car standards, traffic rules, laws and regulations relating to safety, according to the China Industry Innovation Alliance for the Intelligent and Connected Vehicles.
                         </p>
-                        <div class="submit" id="part2_sub">
-                            <input type="submit" value="CHECK OUT FEATURES" id="part2_sub1">
-                            <input type="submit" value="TRY PRODUCT FOR FREE" id="part2_sub2">
-                        </div>
-                    </div>
+                        <button>CHECK OUT FEATURES</button>
+                        <button id="part2_sub2">TRY PRODUCT FOR FREE</button>
                 </div>
-                
-            </div>
-            <img src="images/IpadScreen.png" src="IpadScreen">
+                <div id="part2_img">   
+                    <img src="images/IpadScreen.png" src="IpadScreen">
+                </div> 
         </section>
         <section id="part3">
             <div class="container">
@@ -125,23 +120,67 @@
             <div class="container">
                 <h3>Our Awesome Crew</h3>
                 <p>Our unique online teaching style makes learning easy for everyone. Whether you are trying to land a new job, brush up on your skills.</p>
-                <div class="users">
-                    <img src="images/Userpic 1.png" alt="Userpic 1">
-                    <img src="images/Userpic 2.png" alt="Userpic 2">
-                    <img src="images/Userpic 3.png" alt="Userpic 3">
-                    <img src="images/Userpic 4.png" alt="Userpic 4">
+                <div class="part5_container">
+                    <div class="part5_cell">
+                        <img src="images/Userpic 1.png" alt="Userpic 1">
+                        <div class="part5_hover">
+                            <h4>Ethan Dutton</h4>
+                            <h5>Senior Visual Designer</h5>
+                            <ul>
+                                <li><a href="#"><img src="images/Facebook.png"></a></li>
+                                <li><a href="#"><img src="images/Twitter.png"></a></li>
+                                <li><a href="#"><img src="images/Instagram.png"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="part5_cell">
+                        <img src="images/Userpic 2.png" alt="Userpic 2">
+                        <div class="part5_hover">
+                            <h4>unknown</h4>
+                            <h5>unknown</h5>
+                            <ul>
+                                <li><a href="#"><img src="images/Facebook.png"></a></li>
+                                <li><a href="#"><img src="images/Twitter.png"></a></li>
+                                <li><a href="#"><img src="images/Instagram.png"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="part5_cell">
+                        <img src="images/Userpic 3.png" alt="Userpic 3">
+                        <div class="part5_hover">
+                            <h4>unknown</h4>
+                            <h5>unknown</h5>
+                            <ul>
+                                <li><a href="#"><img src="images/Facebook.png"></a></li>
+                                <li><a href="#"><img src="images/Twitter.png"></a></li>
+                                <li><a href="#"><img src="images/Instagram.png"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="part5_cell">
+                        <img src="images/Userpic 4.png" alt="Userpic 4">
+                        <div class="part5_hover">
+                            <h4>unknown</h4>
+                            <h5>unknown</h5>
+                            <ul>
+                                <li><a href="#"><img src="images/Facebook.png"></a></li>
+                                <li><a href="#"><img src="images/Twitter.png"></a></li>
+                                <li><a href="#"><img src="images/Instagram.png"></a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <section id="part6">
             <div class="container" id="part6_con">
-                <div id="part6_submit">
+                <form>
                     <h3>Fell free to Write Us</h3>
                     <input type="email" value="E-mail" id="con_submit1">
                     <input type="text" value="Subject" id="con_submit2">
                     <textarea id="con_submit3">Message </textarea>
                     <input type="submit" value="SEND" id="con_submit4">
-                </div>
+                </form>
                 <div id="part6_contacts">
                     <h2>Contacts</h2>
                     <p>
@@ -157,6 +196,7 @@
             </div>
         </section>
         <footer>
+          <div class="container">
             <article>
                 <h2>LEARN MORE</h2>
                 <ul>
@@ -185,12 +225,13 @@
                 </ul>               
             </article>
             <article>
-                <h2>Enjoy your Life</h2>
-                <p>
-                <a href="#">Great web UI kit for designers,<br />
-                freelancers or business.</a>
-                <p>
-                <div id="footer_enj">
+                
+                    <h2>Enjoy your Life</h2>
+                    <p>
+                    <a href="#">Great web UI kit for designers,<br />
+                    freelancers or business.</a>
+                    <p>
+                    <div id="footer_enj">
                         <a href="http://www.twitter.com">
                            <img src="images/Twitter Icon.png" alt="Twitter Icon">
                         </a>
@@ -209,9 +250,9 @@
                         <a href="http://www.LinkedIn.com">
                             <img src="images/LinkedIn Icon.png" alt="LinkedInIcon">
                         </a>
-                </div>
-
+                    </div>
             </article>
+        </div>
         </footer>
     </body>
 </html>

@@ -5,6 +5,13 @@
     font-family: Adele, sans-serif;
     font-weight: lighter ;
 }
+body{
+    height: 100%;
+    min-width: 1280px;
+}
+button{
+    cursor: pointer;
+}
 input{
     background: none;
     outline: none;
@@ -25,27 +32,27 @@ a{
     font-size: 2.5em;
 }
 /**background-size:100% 100% 宽度自适应屏幕缩放，但是不能等比高缩放**/
+/**background: url(...) no-repeat center center + background-size: cover 宽度自适应屏幕裁剪**/
 header{
+    padding: 200px 0 200px 0;
     color: white;
-    background: url(images/Background1.png) no-repeat;   
+    background: url(images/Background1.png) no-repeat center center;   
     width: 100%;
-    background-size:100% 100%;  
-    height: 990px;
+    background-size: cover;  
 }
-header h1,p{
+header h1,header p{
     text-align: center;
 }
 header h1{
-    padding-top: 190px;
     font-size: 4em;
 }
 header p{
-    padding: 90px 100px 100px 100px;
+    padding: 90px 100px 65px 100px;
     font-size: 1.2em;
 }
 #header_container{
     text-align: center;
-    border:solid rgb(255, 255, 255,0.5) 0.2px;
+    border:1px solid #43413d;
     padding: 60px 100px 45px 100px;
 }
 #header_container h2{
@@ -65,27 +72,25 @@ input#head_email, input#head_pwd{
     background-color:none;
     width: 290px;
     height: 50px;
-    border:solid rgb(255, 255, 255,0.5) 1px ;
+    border:solid #43413d 1px ;
     border-radius: 2px;
     color: white;
     padding-left: 20px;
     margin-right: 21px;
 }
-input#head_sub{
+#header_container button{
     width: 130px;
     height: 50px;
     background: white;
     color: black;
     border-radius: 2px;
 }
-input#head_sub:hover{
+#header_container button:hover{
     background: rgb(226, 226, 226);
-    cursor:pointer;
 }
 #part1{
     padding-top: 90px;
     width: 100%;
-    height: 710px;
 }
 #part1 h2,h3{
     text-align: center;
@@ -124,37 +129,26 @@ input#head_sub:hover{
 }
 
 #part2{
-    background: url(images/Background2.png) no-repeat;
-    color: white;
-    width: 100%;
+    background: url(images/Background2.png) no-repeat center center;
+    background-size:cover;  
     height: 800px;
-    background-size:100% 100%;   
-    position: relative;             
+    color: white;
+    padding-top: 185px;   
+    position: relative;      
 }
 #part2_container{
-    padding-top: 185px;
-    width: 500px;
+    width: 970px;
+    margin: 0 auto;
 }
-#part2_container2{
+#part2_container h3,#part2_container p{
     width: 370px;
-}
-#part2_container2 h3,p{
+    margin:0 100px 50px 0;
     text-align: left;
 }
-#part2_container2 h3{
-    margin-bottom:50px; 
+#part2_container h3{
+    font-size: 2.5em;
 }
-#part2_container2 p{
-    margin-bottom: 60px;
-}
-#part2_sub{
-    width: 500px;
-}
-input#part2_sub1, input#part2_sub2{
-    display: inline-block;
-
-}
-input#part2_sub1{
+#part2_container button,button#part2_sub2{
     color: black;
     background:white;
     border-radius:2px; 
@@ -162,25 +156,22 @@ input#part2_sub1{
     height: 60px; 
     margin-right: 25px;
 }
-input#part2_sub2{
+button#part2_sub2{
     color: white;
-    border-radius:2px; 
-    border: solid rgb(255, 255, 255,0.5) 0.5px;
-    width: 235px;
-    height: 60px; 
+    background: none;
+    border: solid #43413d 0.5px;
 }
-#part2_sub input:hover{
-    background: rgb(226, 226, 226);
-    cursor:pointer;
+button#part2_sub2:hover{
+    background: rgb(182, 182, 182);
 }
-#part2 img{
+#part2_img{
     position: absolute;
     top: 110px;
-    right:0;
+    left:55%;
 }
 #part3{
     padding: 100px 0 130px 0;
-    border-bottom: solid 1px rgb(128, 128, 128,0.2); 
+    border-bottom: solid 1px #f2f2f2; 
 }
 #part3_container{
     margin-top: 80px;  
@@ -192,28 +183,31 @@ input#part2_sub2{
     width: 270px;
     margin-right: 80px;
 }
+.part3_con p{
+    text-align: center;
+}
 /**想设置 margin 为无 应该写数值 0 而不是 none **/
 .part3_con:last-of-type{
     margin-right: 0;
-
 }
 .part3_con p{
     margin-top:40px; 
 }
 #part4{
     padding: 110px 0 100px 0;
-    border-bottom: solid 1px rgb(128, 128, 128,0.2); 
+    border-bottom: solid 1px #f2f2f2; 
 }
 #part4 h4{
     font-weight: normal;
-    margin-bottom: 40px;
+    padding-bottom: 35px;
 }
 #part4 p{
     text-align: left;
 }
 .part4_con{
     display:flex;
-    height:360px ;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
 }
 #part4_con1{
@@ -231,7 +225,7 @@ input#part2_sub2{
 }
 #part5{
     padding: 100px 0;
-    border-bottom: solid 1px rgb(128, 128, 128,0.2); 
+    border-bottom: solid 1px #f2f2f2; 
 }
 #part5 h3,p{
     text-align: center;
@@ -240,23 +234,90 @@ input#part2_sub2{
     margin:40px auto 65px;
     width: 700px;
 }
-.users img:nth-of-type(odd){
-    margin-right: 20px;
+#part5 .part5_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 970px;
+    height: 720px;
+    margin: 0 auto;
 }
+.part5_cell{
+    flex: 0 0 470px;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+.part5_cell > img{
+    height: 100%;
+}
+.part5_hover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+}
+.part5_cell:hover .part5_hover{
+    opacity: .7;
+    background-color: rgba(0, 0, 0, .7);
+    transition: all .5s;
+    -moz-transition: all .5s;	/* Firefox 4 */
+    -webkit-transition: all .5s;	/* Safari 和 Chrome */
+    -o-transition: all .5s;	/* Opera */
+}
+.part5_hover h4 {
+    margin: 110px 0 20px 0;
+    color: #fff;
+}
+.part5_hover h5 {
+    color: #8a8a8a;
+    width: 470px;
+    text-align: center;
+}
+.part5_hover ul {
+    margin-top: 40px;
+}
+.part5_hover li {
+    display: inline-block;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 55px;
+    height: 55px;
+    line-height: 60px;
+    margin: 0 20px;
+}
+
+.part5_hover img {
+    width: 56px;
+    height: 56px;
+}
+
+.part5_hover a {
+    display: block;
+    width: 55px;
+    height: 55px;
+}
+
 #part6{
     padding: 70px 0;
 }
 #part6_con{
     display: flex;
 }
-#part6_submit,#part6_contacts{
+#part6 form,#part6_contacts{
     width: 470px;
     height: 560px;
 }
-#part6_submit{
+#part6 form{
     display: flex;
     flex-direction: column;
-    border: solid 1px rgb(128, 128, 128,0.2); 
+    border: solid 1px #43413d; 
     border-radius: 3px;
 }
 #part6 h3{
@@ -265,7 +326,7 @@ input#part2_sub2{
     margin: 50px auto;
 }
 #con_submit1,#con_submit2,#con_submit3{
-    border: solid 1px rgb(128, 128, 128,0.2);
+    border: solid 1px #43413d;
     border-radius: 2px;
     width: 370px;
     height: 50px;
@@ -325,8 +386,10 @@ input#part2_sub2{
     margin-bottom: 30px;
 }
 footer{
+    background: #141414;
     padding:90px 200px 210px 200px;
-    background: black;
+}
+footer .container{
     display: flex
 }
 footer article{
@@ -336,8 +399,11 @@ footer h2{
     color: white;
     margin-bottom: 35px;
 }
-footer p, a{
+footer p{
     color: gray;
+}
+footer a{
+    color: gray
 }
 footer a:hover{
     text-decoration: underline;
@@ -345,9 +411,8 @@ footer a:hover{
 footer li,p{
     margin-bottom: 35px;
 }
-#footer_enj img{
-    margin-right: 25px;
-
+#footer_enj a{
+    margin-right: 20px;
 }
 
 
