@@ -1,0 +1,31 @@
+html{
+    margin-left: 10px;
+}
+.strong{
+    font-weight:bold;
+    margin-left:10px;
+}
+.strong1{
+    font-weight:bold;
+}
+section{
+    margin-bottom: 60px;
+}
+h1{
+    padding-top: 20px;
+    text-align: center;
+    width: 150px;
+    height: 1000px;
+    float: left;
+    background-color: cornflowerblue;
+    color:white;
+}
+div{
+    width:80%;
+    float:left;
+    padding-left: 20px;
+    padding-top:10px;
+}
+*{
+    box-sizing: border-box
+}
